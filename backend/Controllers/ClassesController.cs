@@ -1,4 +1,3 @@
-
 using backend.Data;
 using backend.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +16,6 @@ public class ClassesController : ControllerBase
         _context = context;
     }
 
-    // POST /classes
     [HttpPost]
     public async Task<IActionResult> CreateClass(
         [FromBody] CreateClassRequest request)
@@ -71,7 +69,6 @@ public class ClassesController : ControllerBase
         });
     }
 
-    // GET /classes
     [HttpGet]
     public async Task<IActionResult> GetClasses()
     {
@@ -110,7 +107,6 @@ public class ClassesController : ControllerBase
         return Ok(result);
     }
 
-    // GET /classes/{classId}
     [HttpGet("{classId}")]
     public async Task<IActionResult> GetClass(
         string classId)

@@ -1,5 +1,7 @@
+.env
+**/.env
 **/bin/
 **/obj/
-**/.vs/
 **/node_modules/
-**/.env
+**/dist/
+.vs/
